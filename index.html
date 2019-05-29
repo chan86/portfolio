@@ -5,133 +5,392 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Read Only by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<style>
+	.clear {
+		clear: both;
+		/* border: 1px solid gold; */
+		width: 1px;
+	}
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Willis Corto</a></h1>
-					<p><!--[-->I got reprogrammed by a rogue AI<!--]--><br />
-					<!--[-->and now I'm totally cray<!--]--></p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
+	#two #info_box {
+		/* border: 1px solid red; */
+		height: 250px;
+	}
+
+	#two #info_box #profile {
+		/* border: 1px solid black; */
+		margin: 25px auto;
+	}
+
+	#two #info_box #profile>img {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		margin: auto auto;
+	}
+
+	#two #info_box #content {
+		/* border: 1px solid black; */
+		width: 600px;
+		height: 190px;
+		/* margin-left: 100px; */
+		margin: 30px 50px;
+	}
+
+	#two #info_box #content li {
+		display: block;
+	}
+
+	#two #info_box #profile,
+	#two #info_box #content {
+		float: left;
+	}
+
+
+	#two .advantage_box {
+		/* border: 1px solid black; */
+		width: 300px;
+		margin-top: 30px;
+		margin-right: 20px;
+		float: left;
+	}
+
+	#two .advantages {
+		/* border: 1px solid blue; */
+		display: inline-block;
+		width: 220px;
+	}
+
+	#two .advantage_box .content {
+		/* border: 1px solid red; */
+		width: 300px;
+		transform: translate(-75px, 20px);
+	}
+
+	#my_name:hover {
+		color: #00A2FF;
+	}
+</style>
+
+<head>
+	<title>Lee Ye Chan's Portfolio</title>
+	<meta charset="utf-8" />
+
+
+	
+	<!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/template2/fonts/icomoon/style.css"> -->
+	
+	<!-- Template2 ~~ -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/template2/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="assets/css/template2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/template2/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/template2/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/template2/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/template2/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/template2/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/template2/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="assets/css/template2/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="assets/css/template2/css/aos.css">
+	<link rel="stylesheet" href="assets/css/template2/css/style.css">
+	<!-- ~~ Template2 -->
+	<!-- Template3 ~~ -->
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/template3/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom fonts for this template -->
+		<link href="assets/css/template3/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+		<!-- Custom styles for this template -->
+		<link href="assets/css/template3/css/agency.min.css" rel="stylesheet">
+
+	<!-- ~~ Template3 -->
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+
+
+<body class="is-preload" oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;">
+
+	<!-- Header -->
+	<section id="header">
+		<header>
+			<span class="image avatar"><img src="images/me.jpg" alt="" /></span>
+			<h1 id="logo"><a href="#" id="my_name">이예찬<br>(YECHAN LEE)</a></h1>
+			<p>
+				<!--[-->안녕하세요.
+				<!--]--><br />
+				<!--[-->이예찬입니다.
+				<!--]-->
+			</p>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#one" class="active">Home</a></li>
+				<li><a href="#two">Info</a></li>
+				<li><a href="#three">Skill</a></li>
+				<li><a href="#four">Project</a></li>
+				<li><a href="#five">Career</a></li>
+			</ul>
+		</nav>
+		<!-- <footer>                                            사용할거면 살리자!
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+		</footer> -->
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- One -->
+			<section id="one">
+				<div class="image main" data-position="center">
+					<img src="images/img10.PNG" alt="" />
+				</div>
+				<div class="container">
+					<header class="major">
+						<h2 style="color: #1F4287;">Portfolio</h2>
+						<p style="color: #555555;">
+							<!--[-->Hello. My name is Lee Ye Chan. Thank you.
+							<!--]--><br />
+							<!--[-->
+							<!--]-->
+						</p>
+					</header>
+					<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante
+						lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo.
+						Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum
+						blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+				</div>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
+			<!-- Two -->
+			<section id="two">
+				<div class="container">
+					<h2 style="color: #555555;">Info</h2>
+					<div id="info_box">
+						<div id="profile"><img src="../portfolio/images/me.jpg"></div>
+						<div id="content">
+							<ul>
+								<li>이름 : 이예찬</li>
+								<li>나이 : 23세</li>
+								<li>연락처 : 010-4585-7854</li>
+								<li>E-mail : cv20806@gmail.com</li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<ul class="feature-icons">
+						<div class="advantage_box">
+							<li class="fa-code">
+								<!-- <i class="fas fa-smile"></i> -->
+								<!-- <i class="far fa-laugh-squint"></i> -->
+								<!--[-->
+								<span class="advantages">Positive!</span>
+								<!--]-->
+								<div class="content">
+									매우 긍정적인 !<br>
+									나를 뽑아달라!
 								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Read Only</h2>
-										<p><!--[-->Just an incredibly simple responsive site<!--]--><br />
-										<!--[-->template freebie by <a href="http://html5up.net">HTML5 UP</a><!--]-->.</p>
-									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+							</li>
+						</div>
+						<div class="advantage_box">
+							<li class="fa-code">
+								<!--[-->
+								<span class="advantages">Curious!</span>
+								<!--]-->
+								<div class="content">
+									매우 호기심이 많은 !<br>
+									나를 뽑아달라!!
 								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="fa-code"><!--[-->Write all the code<!--]--></li>
-										<li class="fa-cubes"><!--[-->Stack small boxes<!--]--></li>
-										<li class="fa-book"><!--[-->Read books and stuff<!--]--></li>
-										<li class="fa-coffee"><!--[-->Drink much coffee<!--]--></li>
-										<li class="fa-bolt"><!--[-->Lightning bolt<!--]--></li>
-										<li class="fa-users"><!--[-->Shadow clone technique<!--]--></li>
-									</ul>
+							</li>
+						</div>
+						<div class="advantage_box">
+							<li class="fa-code">
+								<!--[-->
+								<span class="advantages">Enterprising!</span>
+								<!--]-->
+								<div class="content">
+									매우 진취적인!<br>
+									나를 뽑아달라!!!
 								</div>
-							</section>
+							</li>
+						</div>
+						<div class="clear"></div>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><!--[-->Possibly broke spacetime<!--]--></h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><!--[-->Terraformed a small moon<!--]--></h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><!--[-->Snapped dark matter in the wild<!--]--></h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section id="three">
+				<div class="container">
+					<h2 style="color: #555555; margin-bottom: 45px;">Skill</h2>
+					<div class="features">
+						<article>
+							<a href="#" class="image" onclick="event.preventDefault();" style="cursor: default;"><img src="images/programmingLanguage.PNG" alt="" /></a>
+							<div class="inner">
+								<ul>
+									<li>Java</li>
+									<li>SQL</li>
+									<li>JavaScript</li>
+									<li>Python</li>
+								</ul>
+							</div>
+						</article>
+
+						<article>
+							<div class="inner">
+								<ul>
+									<li>Eclipse</li>
+									<li>Oracle</li>
+									<li>SQL-Developer</li>
+									<li>eXERD</li>
+									<li>Visual-Studio-Code</li>
+									<li>EditPlus</li>
+								</ul>
+							</div>
+							<a href="#" class="image" onclick="event.preventDefault();" style="cursor: default;"><img src="images/tool.PNG" alt="" /></a>
+						</article>
+
+						<article>
+							<a href="#" class="image" onclick="event.preventDefault();" style="cursor: default;"><img src="images/framework.PNG" alt="" /></a>
+							<div class="inner">
+								<ul>
+									<li>HTML5</li>
+									<li>CSS</li>
+									<li>jQuery</li>
+									<li>Bootstrap</li>
+									<!-- <li>Spring</li> 추후에 배움-->
+								</ul>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<!-- Four -->
+			<section id="four">
+				<div class="container">
+					<h2 style="color: #555555; margin-bottom: 55px;">Project</h2>
+					
+					<div class="site-section section-2" id="work-section" style="padding: 0px 0px;">
+
+							<!-- <div class="container">
+							  <div class="row">
+								<div class="col-lg-6 mb-5">
+								  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+								</div>
+							  </div>
+					  
+							</div> -->
+							  
+					  
+					  
+					  
+					  
+							<div class="owl-carousel nonloop-block-13">
+									
+								<!-- <a class="work-thumb" href="images/project2_main.PNG"  data-fancybox="gallery">
+								  <div class="work-text">
+									<h3>Console Project1</h3>
+									<span class="category">[극한배달]</span>
+									<div class="category">배달 시스템입니다.</div>
+								  </div>
+								  <img src="images/project1_main.jpg" alt="Image" class="img-fluid">
+								</a>  -->
+								
+
+
+
+								<a class="work-thumb portfolio-link" data-toggle="modal" href="#portfolioModal1"  data-fancybox="portfolio-hover">
+										<div class="work-text portfolio-hover-content">
+										<h3>Console Project1</h3>
+										<span class="category">[극한배달]</span>
+										<div class="category">배달 프로그램입니다.</div>
 									</div>
-								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
+									<img src="images/project1_main.jpg" alt="Image" class="img-fluid">
+								</a>
+								
+								<a class="work-thumb portfolio-link" data-toggle="modal" href="#portfolioModal1"  data-fancybox="gallery portfolio-hover">
+									<div class="work-text portfolio-hover-content">
+										<h3>Console Project2</h3>
+										<span class="category">[학원 프로그램]</span>
+										<div class="category">학원 프로그램입니다.</div>
 										</div>
-									</form>
-								</div>
-							</section>
+										<img src="images/project2_main.PNG" alt="Image" class="img-fluid">
+									</a>
+								
 
-						<!-- Five -->
-						<!--
+
+
+								<a class="work-thumb" href="images/importIMG.png"  data-fancybox="gallery">
+								  <div class="work-text">
+									<h3>Work Name Here</h3>
+									<span class="category">Branding</span>
+								  </div>
+								  <img src="images/importIMG.png" alt="Image" class="img-fluid">
+								</a>
+					  
+								<a class="work-thumb" href="images/importIMG.png"  data-fancybox="gallery">
+								  <div class="work-text">
+									<h3>Work Name Here</h3>
+									<span class="category">Web Development</span>
+								  </div>
+								  <img src="images/importIMG.png" alt="Image" class="img-fluid">
+								</a>
+					  
+								<a class="work-thumb" href="images/importIMG.png" data-fancybox="gallery">
+								  <div class="work-text">
+									<h3>Work Name Here</h3>
+									<span class="category">Design</span>
+								  </div>
+								  <img src="images/importIMG.png" alt="Image" class="img-fluid">
+								</a>
+							</div>
+					  
+						  </div>
+				</div>
+			</section>
+
+
+
+
+
+			<!-- Five -->
+			<section id="five">
+				<div class="container">
+					<h2 style="color: #555555; margin-bottom: 45px;">Career</h2>
+					<h4>학력</h4>
+					<p>신구대학교 IT미디어과 모바일IT전공 졸업<br>쌍용 교육센터 Java & Python 과정 수료</p>
+					<h4>보유 자격증</h4>
+					<p>자동차 운전면허증 2종<br>정보 처리 산업기사</p>
+
+				</div>
+			</section>
+
+			<!-- Five -->
+			<!--
 							<section id="five">
 								<div class="container">
 									<h3>Elements</h3>
@@ -461,27 +720,148 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</section>
 						-->
 
-					</div>
+		</div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-							</ul>
-						</div>
-					</section>
 
+									<!-- 제거할까?? -->
+		<!-- Footer -->
+		<!-- <section id="footer">
+			<div class="container">
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+				</ul>
 			</div>
+		</section> -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+
+	<!-- Modal1 -->
+	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 mx-auto">
+								<div class="modal-body">
+									<!-- Project Details Go Here -->
+									<h2 class="text-uppercase">Project Name</h2>
+									<!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+									<img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+									<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p> -->
+
+									<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+											<ol class="carousel-indicators" style="bottom: -40px;" >
+													<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: black;"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: black;"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color: black;"></li>
+												</ol>
+									
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img class="d-block w-100" src="images/avatar.jpg" alt="First slide">
+
+													<!-- 사진 내 텍스트 -->
+													<div class="carousel-caption d-none d-md-block">
+														<h5>...</h5>
+														<p>...</p>
+													</div>
+
+
+												</div>
+												
+													
+												
+												<div class="carousel-item">
+													<img class="d-block w-100" src="images/avatar.jpg" alt="Second slide">
+												</div>
+												<div class="carousel-item">
+													<img class="d-block w-100" src="images/avatar.jpg" alt="Third slide">
+												</div>
+											</div>
+											
+											<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+
+
+									<ul class="list-inline">
+										<li>Date: January 2017</li>
+										<li>Client: Threads</li>
+										<li>Category: Illustration</li>
+									</ul>
+
+
+									
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
+										<i class="fas fa-times"></i>
+										Close Project</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+<!-- main 파일이 좀 걱정! -->
+
+<!-- Template2  ~~ -->
+	<script src="assets/css/template2/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/css/template2/js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="assets/css/template2/js/jquery-ui.js"></script>
+	<script src="assets/css/template2/js/popper.min.js"></script>
+	<script src="assets/css/template2/js/bootstrap.min.js"></script>
+	<script src="assets/css/template2/js/owl.carousel.min.js"></script>
+	<script src="assets/css/template2/js/jquery.stellar.min.js"></script>
+	<script src="assets/css/template2/js/jquery.countdown.min.js"></script>
+	<script src="assets/css/template2/js/bootstrap-datepicker.min.js"></script>
+	<script src="assets/css/template2/js/jquery.easing.1.3.js"></script>
+	<script src="assets/css/template2/js/aos.js"></script>
+	<script src="assets/css/template2/js/jquery.fancybox.min.js"></script>
+	<script src="assets/css/template2/js/jquery.sticky.js"></script>
+  
+	
+	<script src="assets/css/template2/js/main.js"></script>
+<!--  ~~  Template2 -->
+<!-- Template3  ~~ -->
+	<!-- Bootstrap core JavaScript -->
+  <script src="assets/css/template3/vendor/jquery/jquery.min.js"></script> <!-- 중복?-->
+  <script src="assets/css/template3/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="assets/css/template3/vendor/jquery-easing/jquery.easing.min.js"></script> <!-- 중복?-->
+
+  <!-- Contact form JavaScript -->
+  <script src="assets/css/template3/js/jqBootstrapValidation.js"></script>
+  <script src="assets/css/template3/js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <!-- <script src="assets/css/template3/js/agency.min.js"></script> -->
+<!--  ~~  Template3 -->
+
+</body>
+
 </html>

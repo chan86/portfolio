@@ -96,7 +96,7 @@ a {
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent;
-    color: #4acaa8 !important; }
+    color: #4acaa8 !important; }              /* <a> 이름 색깔 */
 
 strong, b {
   color: #777;
@@ -643,6 +643,10 @@ pre {
           .row.gtr-200.gtr-uniform > * {
             padding-top: 3em; } }
   @media screen and (max-width: 736px) {
+    #my_name:hover {
+      color: #00A2FF;
+    }
+                                                          /*  */
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -756,6 +760,10 @@ pre {
           .row.gtr-200.gtr-uniform > * {
             padding-top: 2.5em; } }
   @media screen and (max-width: 480px) {
+    #my_name:hover {
+      color: #00A2FF;
+    }
+                                                      /*  */
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -1349,7 +1357,7 @@ ul.feature-icons {
       font-weight: normal;
       text-transform: none !important; }
     ul.feature-icons li:before {
-      background: #4acaa8;
+      background: #00A2FF;
       border-radius: 100%;
       color: #ffffff;
       display: block;
