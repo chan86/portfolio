@@ -303,7 +303,137 @@ pre {
       margin-top: -4em; }
       .row.gtr-200.gtr-uniform > * {
         padding-top: 4em; }
+
+
+
+
+
+
+        .clear {
+          clear: both;
+          /* border: 1px solid gold; */
+          width: 1px;
+        }
+      
+        #two #info_box {
+          /* border: 1px solid red; */
+          height: 250px;
+        }
+      
+        #two #info_box #profile {
+          /* border: 1px solid black; */
+          margin: 25px auto;
+        }
+      
+        #two #info_box #profile>img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin: auto auto;
+        }
+      
+        #two #info_box #content {
+          /* border: 1px solid black; */
+          width: 600px;
+          height: 190px;
+          /* margin-left: 100px; */
+          margin: 30px 50px;
+        }
+      
+        #two #info_box #content li {
+          display: block;
+        }
+      
+        #two #info_box #profile,
+        #two #info_box #content {
+          float: left;
+        }
+      
+      
+        #two .advantage_box {
+          /* border: 1px solid black; */
+          width: 300px;
+          margin-top: 30px;
+          margin-right: 20px;
+          float: left;
+        }
+      
+        #two .advantages {
+          /* border: 1px solid blue; */
+          display: inline-block;
+          width: 220px;
+        }
+      
+        #two .advantage_box .content {
+          /* border: 1px solid red; */
+          width: 300px;
+          transform: translate(-75px, 20px);
+        }
+                                                              /*  */
   @media screen and (max-width: 1680px) {
+    .clear {
+      clear: both;
+      /* border: 1px solid gold; */
+      width: 1px;
+    }
+  
+    #two #info_box {
+			/* border: 1px solid red; */
+      height: 250px;
+    }
+  
+    #two #info_box #profile {
+      /* border: 1px solid black; */
+      margin: 25px auto;
+    }
+  
+    #two #info_box #profile>img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: auto auto;
+    }
+  
+    #two #info_box #content {
+      /* border: 1px solid black; */
+      width: 400px;
+      height: 190px;
+      /* margin-left: 100px; */
+      margin: 50px 50px;
+    }
+  
+    #two #info_box #content li {
+      display: block;
+    }
+  
+    #two #info_box #profile,
+    #two #info_box #content {
+      float: left;
+    }
+  
+  
+    #two .advantage_box {
+      /* border: 1px solid black; */
+      width: 230px;
+      margin-top: 10px;
+      margin-right: 20px;
+      float: left;
+    }
+  
+    #two .advantages {
+      /* border: 1px solid blue; */
+      display: inline-block;
+      width: 120px;
+    }
+  
+    #two .advantage_box .content {
+      /* border: 1px solid red; */
+      width: 200px;
+      transform: translate(-65px, 20px);
+    }
+                                                          /*  */
+
+
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -417,6 +547,72 @@ pre {
           .row.gtr-200.gtr-uniform > * {
             padding-top: 4em; } }
   @media screen and (max-width: 1280px) {
+    .clear {
+      clear: both;
+      /* border: 1px solid gold; */
+      width: 1px;
+    }
+  
+    #two #info_box {
+			/* border: 1px solid red; */
+      height: 250px;
+    }
+  
+    #two #info_box #profile {
+      /* border: 1px solid black; */
+      margin: 25px auto;
+    }
+  
+    #two #info_box #profile>img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: auto auto;
+    }
+  
+    #two #info_box #content {
+      /* border: 1px solid black; */
+      width: 400px;
+      height: 190px;
+      margin-left: 100px;
+      margin: 60px 50px;
+    }
+  
+    #two #info_box #content li {
+      display: block;
+    }
+  
+    #two #info_box #profile,
+    #two #info_box #content {
+      float: left;
+    }
+  
+  
+    #two .advantage_box {
+      /* border: 1px solid black; */
+      width: 200px;
+      margin-top: -30px;
+      margin-right: 20px;
+      float: left;
+    }
+  
+    #two .advantages {
+      /* border: 1px solid blue; */
+      display: inline-block;
+      width: 120px;
+    }
+  
+    #two .advantage_box .content {
+      /* border: 1px solid red; */
+      width: 200px;
+      transform: translate(-50px, 20px);
+    }
+                                                          /*  */
+
+
+
+
+
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -530,6 +726,73 @@ pre {
           .row.gtr-200.gtr-uniform > * {
             padding-top: 3em; } }
   @media screen and (max-width: 1024px) {
+                                      /* 이놈이 문제(아래까지 먹힘 + 중간에 깨짐) */
+    .clear {
+      clear: both;
+      /* border: 1px solid gold; */
+      width: 1px;
+    }
+  
+    #two #info_box {
+			/* border: 1px solid red; */
+      height: 250px;
+    }
+  
+    #two #info_box #profile {
+      /* border: 1px solid black; */
+      margin: 25px auto;
+    }
+  
+    #two #info_box #profile>img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: auto auto;
+    }
+  
+    #two #info_box #content {
+      /* border: 1px solid black; */
+      width: 250px;
+      height: 190px;
+      margin: 50px 50px;
+    }
+  
+    #two #info_box #content li {
+      display: block;
+    }
+  
+    #two #info_box #profile,
+    #two #info_box #content {
+      float: left;
+    }
+  
+  
+    #two .advantage_box {
+      /* border: 1px solid black; */
+      width: 180px;
+      margin-top: 0px;
+      margin-right: 20px;
+      float: left;
+    }
+  
+    #two .advantages {
+      /* border: 1px solid blue; */
+      display: inline-block;
+      width: 120px;
+    }
+  
+    #two .advantage_box .content {
+      /* border: 1px solid red; */
+      width: 170px;
+      transform: translate(-50px, 20px);
+    }
+                                                          /*  */
+
+
+
+
+
+
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -643,10 +906,72 @@ pre {
           .row.gtr-200.gtr-uniform > * {
             padding-top: 3em; } }
   @media screen and (max-width: 736px) {
-    #my_name:hover {
+    /* #my_name:hover {
       color: #00A2FF;
+    } */
+    .clear {
+      clear: both;
+      /* border: 1px solid gold; */
+      width: 1px;
+    }
+  
+    #two #info_box {
+			/* border: 1px solid red; */
+      height: 250px;
+    }
+  
+    #two #info_box #profile {
+      /* border: 1px solid black; */
+      margin: 25px auto;
+    }
+  
+    #two #info_box #profile>img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: auto auto;
+    }
+  
+    #two #info_box #content {
+      /* border: 1px solid black; */
+      width: 250px;
+      height: 190px;
+      margin: 50px 0px;
+    }
+  
+    #two #info_box #content li {
+      display: block;
+    }
+  
+    #two #info_box #profile,
+    #two #info_box #content {
+      float: left;
+    }
+  
+  
+    #two .advantage_box {
+      /* border: 1px solid black; */
+      width: 200px;
+      margin-top: -40px;
+      margin-left: 150px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      float: left;
+    }
+  
+    #two .advantages {
+      /* border: 1px solid blue; */
+      display: inline-block;
+      width: 120px;
+    }
+  
+    #two .advantage_box .content {
+      /* border: 1px solid red; */
+      width: 200px;
+      transform: translate(-55px, 20px);
     }
                                                           /*  */
+
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -760,9 +1085,70 @@ pre {
           .row.gtr-200.gtr-uniform > * {
             padding-top: 2.5em; } }
   @media screen and (max-width: 480px) {
-    #my_name:hover {
+    /* #my_name:hover {
       color: #00A2FF;
+    } */
+
+    .clear {
+      clear: both;
+      /* border: 1px solid gold; */
+      width: 1px;
     }
+  
+    #two #info_box {
+			/* border: 1px solid red; */
+      height: 250px;
+    }
+  
+    #two #info_box #profile {
+      /* border: 1px solid black; */
+      margin: 25px auto;
+    }
+  
+    #two #info_box #profile>img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: auto auto;
+    }
+  
+    #two #info_box #content {
+      /* border: 1px solid black; */
+      width: 250px;
+      height: 190px;
+      margin: 50px 50px;
+    }
+  
+    #two #info_box #content li {
+      display: block;
+    }
+  
+    #two #info_box #profile,
+    #two #info_box #content {
+      float: left;
+    }
+  
+  
+    #two .advantage_box {
+      border: 1px solid black;
+      width: 180px;
+      margin-top: 20px;
+      margin-right: 20px;
+      float: left;
+    }
+  
+    #two .advantages {
+      /* border: 1px solid blue; */
+      display: inline-block;
+      width: 120px;
+    }
+  
+    #two .advantage_box .content {
+      /* border: 1px solid red; */
+      width: 170px;
+      transform: translate(-50px, 20px);
+    }
+                                                          /*  */
                                                       /*  */
     .row {
       display: flex;
