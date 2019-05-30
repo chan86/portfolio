@@ -369,7 +369,11 @@ pre {
           width: 300px;
           transform: translate(-75px, 20px);
         }
-                                                              /*  */
+                                                                                            /*  */
+
+
+
+
   @media screen and (max-width: 1680px) {
     .clear {
       clear: both;
@@ -1103,20 +1107,22 @@ pre {
     #two #info_box #profile {
       /* border: 1px solid black; */
       margin: 25px auto;
+      margin-left: 80px;
     }
-  
+    
     #two #info_box #profile>img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       margin: auto auto;
+      margin-left: 80px;
     }
   
     #two #info_box #content {
       /* border: 1px solid black; */
       width: 250px;
       height: 190px;
-      margin: 50px 50px;
+      margin: 50px 30px;
     }
   
     #two #info_box #content li {
@@ -1130,10 +1136,11 @@ pre {
   
   
     #two .advantage_box {
-      border: 1px solid black;
+      /* border: 1px solid black; */
       width: 180px;
       margin-top: 20px;
       margin-right: 20px;
+      margin-left: 0px;
       float: left;
     }
   
