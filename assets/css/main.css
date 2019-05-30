@@ -1122,7 +1122,7 @@ pre {
       /* border: 1px solid black; */
       width: 250px;
       height: 190px;
-      margin: 50px 30px;
+      margin: -10px 65px;
     }
   
     #two #info_box #content li {
@@ -1140,7 +1140,7 @@ pre {
       width: 180px;
       margin-top: 0px;
       margin-right: 20px;
-      margin-left: 30px;
+      margin-left: 100px;
       float: left;
     }
   
@@ -1749,7 +1749,7 @@ ul.feature-icons {
       font-weight: normal;
       text-transform: none !important; }
     ul.feature-icons li:before {
-      background: #00A2FF;
+      background: #1F4287;
       border-radius: 100%;
       color: #ffffff;
       display: block;
@@ -1759,7 +1759,8 @@ ul.feature-icons {
       position: absolute;
       text-align: center;
       top: 0;
-      width: 2.5em; }
+      width: 2.5em; 
+      }
 
 /* Icons */
 ul.icons {
