@@ -1,9 +1,14 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
-@font-face{
+/* @font-face{
   font-family: 'portfolio';
   src:url("../fonts/HangeulNuriR.ttf")
+} */
+@font-face{
+  font-family: 'portfolio';
+  src:url("../fonts/BMHANNAAir_ttf.ttf")
 }
+
 /*
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
